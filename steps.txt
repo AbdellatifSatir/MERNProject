@@ -1,0 +1,52 @@
+npm init vite // create react app
+cd client
+npm install // install all packages
+npm run dev // run the server
+
+npm install bootstrap
+npm install axios // for http req res
+npm install react-router-dom // for routing
+
+remove unnecessary code and files
+create routes for CRUD inside App.jsx 
+create component for all this routes
+   - Users.jsx
+   - CreateUser.jsx
+   - UpdateUser.jsx
+assign each route with its component in App.jsx
+implement Users component for display Users Users.jsx
+add link for navigatation between the routes Users.jsx
+implement CreateUser component
+implement UpdateUser component
+
+create server folder
+cd server
+npm init -y // for create package.json file
+npm install express // for create RestAPI
+npm install mongoose 
+npm install cors // used to acces our backend side in the frontend
+npm install nodemon // refresh server side automaticlly
+
+create index.js file // for write our api code
+add "start": "nodemon index.js" inside package.json/scripts // for refresh the server
+import express,cors,mongoose in index.js
+npm start // for run the server
+
+open MongoDB and create new DB with users collection
+create the connection with this DB
+create a Users Model for users collection
+   - create models folder then Users.js
+   - define the table columns (Schema)
+   - export the model
+   - import it in index.js 
+   - create post method to add new records
+
+back to the frontend CreateUser.jsx
+   - creates useStates for store the inputs
+   - create submit function
+   - Then test Add User button to add user into DB
+   - create route for back home after Add User
+   - implement Read Users
+updateUser.jsx implement Update User find him first
+User.jsx implement Delete User find him first
+
